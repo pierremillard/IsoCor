@@ -209,7 +209,7 @@ Please follow this simple procedure:
    * If it is related to your system or your Python installation, you will need to ask some
      help from your local system administrator or your IT department so they could
      guide you toward a clean installation. Tell them that you wanted "to use the graphical
-     user interface of IsoCor, a Python 3.5 software" and what you did so far (installation),
+     user interface of IsoCor, a Python 3.7 software" and what you did so far (installation),
      give them the traceback and a link toward the documentation. They should know what to do.
    * If you believe the problem is in IsoCor or that your local system administrator
      told you so, then you probably have found a bug! We would greatly appreciate
