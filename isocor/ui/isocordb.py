@@ -5,7 +5,8 @@ import isocor as hr
 from decimal import Decimal
 import shutil
 import numpy as np
-import pkg_resources
+# import pkg_resources
+import importlib.resources
 
 
 class EnvComputing(object):
@@ -18,7 +19,8 @@ class EnvComputing(object):
         self.home = Path(home)
         self.default_db = Path(self.home, 'isocordb')
         self.db_path = self.default_db
-        self.example_db = pkg_resources.resource_filename('isocor', 'data/')
+        # self.example_db = pkg_resources.resource_filename('isocor', 'data/')
+        self.example_db = importlib.resources.files('isocor').joinpath('data')
 
     def initializeDB(self):
         # if db files don't exist, copy the example folder
